@@ -4,13 +4,16 @@ import { slideInDownAnimation } from '../animations';
 
 @Component({
   templateUrl: './compose-message.component.html',
-  styles: [ ':host { position: absolute; top: 10%; right: 10%; background-color: #EDF8D3; padding: 20px; display: block }' ]
+  styles: [ ':host { position: absolute; top: 10%; right: 10%; background-color: #EDF8D3; padding: 20px; display: block }' ],
+  animations: [slideInDownAnimation]
 })
 export class ComposeMessageComponent {
  
   details: string;
   sending = false;
   message: string = '';
+
+  @HostBinding('@slideInDownAnimation') animation = true;
  
   constructor(private router: Router) {}
  
