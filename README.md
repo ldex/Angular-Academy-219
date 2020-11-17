@@ -1,4 +1,4 @@
-# Angular Academy Demo Router Start
+# Angular Academy Demo Router + Web Worker
 
 Starter Project for the Router demo of <a href="https://angular.ac" target="_blank">Angular Academy</a>.
 
